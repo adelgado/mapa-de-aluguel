@@ -1,42 +1,33 @@
-<!DOCTYPE html>
+<header>
+	<h1><%= @name %></h1>
+</header>
 
-<html>
-<head>
-	<title><% @name %></title>
-</head>
-<body>
-	<header>
-		<h1><%= @name %></h1>
-	</header>
+<nav>
+	<ul>
+		<li>Adicionar o seu aluguel</li>
+	</ul>
+</nav>
 
-	<nav>
-		<ul>
-			<li>Adicionar o seu aluguel</li>
-		</ul>
-	</nav>
+<aside>
+	<form>
+		<label>
+			<p>Salário líquido por mês</p>
+			<input type="range" name="income" min="0" max="50000">
+		</label>
 
-	<aside>
-		<form>
-			<label>
-				<p>Salário líquido por mês</p>
-				<input type="range" name="income" min="0" max="50000">
-			</label>
+		<label>
+			<p>Quantidade de quartos</p>
+			<ol>
+				<li><input type="radio"/></li>
+				<li><input type="radio"/></li>
+				<li><input type="radio"/></li>
+				<li><input type="radio"/></li>
+				<li><input type="radio"/></li>
+			</ol>
+		</label>
+	</form>
+</aside>
 
-			<label>
-				<p>Quantidade de quartos</p>
-				<ol>
-					<li><input type="radio"/></li>
-					<li><input type="radio"/></li>
-					<li><input type="radio"/></li>
-					<li><input type="radio"/></li>
-					<li><input type="radio"/></li>
-				</ol>
-			</label>
-		</form>
-	</aside>
-
-	<div>
-		<h2>Lista de Bairros</h2>
-	</div>
-</body>
-</html>
+<div>
+	<h2>Lista de Bairros</h2>
+</div>
