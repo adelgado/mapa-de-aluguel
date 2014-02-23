@@ -1,0 +1,25 @@
+%header
+	%h1= @city.name
+
+%nav
+	%ul
+		%li Adicionar o seu aluguel
+
+%aside
+	%form
+		%label
+			%p Salário líquido por mês
+			%input{type: "range", name: "income", min: "0", max: "50000"}
+
+		%label
+			%p Quantidade de quartos
+			%ol
+				%li
+					%input{type: "radio"}
+
+%div
+	%h2 Lista de Bairros
+
+	- @city.areas.each do |area|
+		%li
+			%p= area.name
