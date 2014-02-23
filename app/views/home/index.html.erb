@@ -7,12 +7,14 @@
 	<body>
 		<h1>Aonde você tem condições de viver?</h1>
 
-		<h2>
-			<a href="rio-de-janeiro">Rio de Janeiro</a>
-		</h2>
-
-		<h2>
-			<a href="sao-paulo">São Paulo</a>
-		</h2>
+		<ul>
+			<% @cities.each do |city| %>
+				<li>
+					<h2>
+						<%= link_to city.name, city %>
+					</h2>
+				</li>
+			<% end %>
+		</ul>
 	</body>
 </html>
